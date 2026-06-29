@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 16px;
+  background: #f4f4f7;
+  font-family: -apple-system, "Segoe UI", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+
+.app {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+}
+
+h1 {
+  margin: 0 0 20px;
+  font-size: 22px;
+  text-align: center;
+}
+
+#add-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+#item-input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+#item-input:focus {
+  outline: none;
+  border-color: #4a7dfc;
+}
+
+#add-form button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #4a7dfc;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#add-form button:hover {
+  background: #3a6ae0;
+}
+
+#item-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 4px;
+  border-bottom: 1px solid #eee;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.item input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.item span {
+  flex: 1;
+  font-size: 15px;
+  word-break: break-word;
+}
+
+.item.checked span {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.item button {
+  border: none;
+  background: none;
+  color: #c0392b;
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 1;
+  padding: 4px;
+}
+
+.item button:hover {
+  color: #e74c3c;
+}
+
+.empty-message {
+  text-align: center;
+  color: #999;
+  font-size: 14px;
+  margin: 16px 0 0;
+}
